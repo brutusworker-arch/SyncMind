@@ -25,7 +25,7 @@ const config: ProviderConfig = {
     model: 'claude-sonnet-4-6',
   },
   ollama: {
-    url: import.meta.env.VITE_OLLAMA_URL as string || 'http://192.168.178.172:11434',
+    url: import.meta.env.VITE_OLLAMA_URL as string || 'http://localhost:11434',
     model: import.meta.env.VITE_OLLAMA_MODEL as string || 'qwen2.5:7b',
   },
 };
