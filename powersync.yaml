@@ -1,0 +1,10 @@
+# PowerSync Sync Rules
+# Deploy this to your PowerSync Cloud project
+
+bucket_definitions:
+  user_data:
+    # Sync knowledge entries to all clients
+    # In a real app, filter by user_id for multi-tenant
+    data:
+      - SELECT id, question, answer, tags, user_id, created_at, updated_at
+        FROM knowledge_entries
